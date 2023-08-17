@@ -4,10 +4,12 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 	<link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="cart.css">
+   	<link rel="stylesheet" href="cart.css">
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<script src="./js/bicicletas.js"></script>
-  <script src="./js/cartService.js" defer></script>
+  	<script src="./js/cartService.js" defer></script>
 	<script src="./js/cart.js" defer></script>
 	<title>Remeras One</title>
 </head>
@@ -25,12 +27,18 @@
 		<p id="carrito-vacio">Ups! El carrito está vacío, <a href="./index.html">elige algunos productos</a></p>
 		<section id="cart-container">
 		</section>
+
+	  	 
+	
+
   <section id="totales">
+	<button id="nuevo-boton-alerta">Mostrar Nueva Alerta</button>
     <p>Total unidades: <span id="cantidad">0</span></p>
     <p>Total precio: $<span id="precio">0</span></p>
-    <button disabled>Comprar</button>
+    <button id="finalizar-compra">Comprar</button>
     <button id="reiniciar">Reiniciar</button>
   </section>
+ 
 </main>
 	<footer>
 		<p>La mejor calidad y el mejor precio</p>
